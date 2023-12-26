@@ -155,8 +155,6 @@ function Home({ cart, setCart, updateCartCount }) {
       </div>
       <div>
         <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
-      <span style={{textAlign: "center"}}>Select Category:</span>
-
           <div className="category-container" >
         <div className="filter-button"  code="categoryFilter"
               value={selectedCategory}
