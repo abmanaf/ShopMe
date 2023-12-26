@@ -97,23 +97,24 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
  */}
   return (
     <div>
-      <div className="available-product-container">
-        <div style={{ marginTop: "7em", textAlign: "center" }}>
-          {/*
-          <div style={{ textAlign: "start" }}>
-            <p style={{ textAlign: "start", fontSize: "30px" }}>
-              Healthy Fruits:
-            </p>
-            <span className="fruit-in-container">{healthyFruits}</span>
+      <div style={{backgroundColor: 'white', padding: '3em 3em', marginTop: '4em'}}>
+          <div className="category-container" >
+        <div className="filter-button"  code="categoryFilter"
+              value={selectedCategory}
+              onClick={(e) => setSelectedCategory(e.target.value)}>
+              <button value= 'all'>All</button>
+              <button value= 'fruits'>Fruit</button>
+              <button value='vegetables'>Vegetable</button>
+          </div> 
           </div>
-          
-          <hr />
-          <br />
-           */}
+         </div>
+      <div className="available-product-container">
+        <div style={{ marginTop: "4em", textAlign: "center" }}>
+        
           <div className="sort-container" style={{ marginTop: "2em" }}>
             <label
               htmlFor="categoryFilter"
-              style={{ fontSize: "1em", marginTop: "3em" }}
+              style={{ fontSize: "1em", marginTop: "em" }}
             >
               Select Category:
             </label>

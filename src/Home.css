@@ -79,10 +79,9 @@
 .third-sub-container {
   background-color: rgb(213, 213, 164);
 }
+
 .filter-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 
 .filter-button button {
@@ -122,6 +121,14 @@
     width: 100%;
     height: auto;
   }
+  .sort-container {
+    display: none;
+  }
+  .filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -148,6 +155,14 @@
     width: 450px;
     height: 350px;
   }
+  .sort-container {
+    display: none;
+  }
+  .filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -173,5 +188,13 @@
     width: 550px;
     height: 350px;
     margin-right: 10em;
+  }
+  .sort-container {
+    display: none;
+  }
+  .filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
