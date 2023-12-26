@@ -1,6 +1,13 @@
 body {
   background-color: white;
 }
+.filter-button button {
+  background-color: rgb(225, 198, 139);
+  border: none;
+}
+.filter-button button:hover {
+  background-color: rgb(175, 134, 47);
+}
 .fruit-container {
   width: 80%;
   padding: 5px 5px;
@@ -19,7 +26,7 @@ body {
 .product-container li {
   list-style-type: none;
   padding: 10px 10px;
-  background-color: rgb(245, 241, 241);
+  background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px 10px;
 }
@@ -58,11 +65,7 @@ body {
   border-radius: 15px;
   border: 1px solid black;
 }
-.fiter strong {
-  border: 1px solid #777;
-  padding: 0.5em 0.6em;
-  margin-bottom: 10em;
-}
+
 .available-product-container {
   width: 100%;
   margin: 2rem auto;
