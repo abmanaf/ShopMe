@@ -97,7 +97,9 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
  */}
   return (
     <div>
-      <div style={{backgroundColor: 'white', padding: '3em 3em', marginTop: '4em'}}>
+      <div style={{backgroundColor: 'white', padding: '3em 3em', marginTop: '2em'}}>
+        
+        <p style={{textAlign: 'center',padding: '1em 1em', fontSize: '25px'}}>Category</p>
           <div className="category-container" >
         <div className="filter-button"  code="categoryFilter"
               value={selectedCategory}
@@ -110,7 +112,7 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
          </div>
       <div className="available-product-container">
         <div style={{ marginTop: "4em", textAlign: "center" }}>
-        
+        {/* 
           <div className="sort-container" style={{ marginTop: "2em" }}>
             <label
               htmlFor="categoryFilter"
@@ -133,7 +135,7 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
               <option value="vegetables">Vegetables</option>
             </select>
           </div>
-
+          */}
           <div className="product-in-container">{productList}</div>
         </div>
       </div>

@@ -118,9 +118,6 @@ body {
   .available-product-container {
     width: 80%;
   }
-  .fiter strong {
-    display: none;
-  }
 }
 @media only screen and (min-width: 1366px) {
   .product-container {
@@ -140,9 +137,7 @@ body {
   .available-product-container {
     width: 80%;
   }
-  .fiter strong {
-    display: none;
-  }
+
   .sort-container {
     margin-left: 49em;
   }
