@@ -1,0 +1,46 @@
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+.product-table th,
+.product-table td {
+  padding: 3px 3px;
+
+  border: 1px solid #4a4949;
+  text-align: center;
+}
+
+.product-table th {
+  background-color: #f2f2f2;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.product-table tbody tr:hover {
+  background-color: #ddd;
+}
+@media only screen and (min-width: 1024px) {
+  .product-table {
+    width: 50%;
+    font-size: 16px;
+  }
+  .product-table th,
+  .product-table td {
+    padding: 10px 10px;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .product-table {
+    width: 50%;
+    font-size: 16px;
+  }
+  .product-table th,
+  .product-table td {
+    padding: 10px 10px;
+  }
+}

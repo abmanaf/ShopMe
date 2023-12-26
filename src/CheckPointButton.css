@@ -1,0 +1,27 @@
+/* CheckPointButton.css */
+
+.check-point-table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.check-point-table th,
+.check-point-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.check-point-table th {
+  background-color: #f2f2f2;
+}
+
+.check-point-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.check-point-table tbody tr:hover {
+  background-color: #ddd;
+}
