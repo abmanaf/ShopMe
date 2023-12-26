@@ -154,10 +154,10 @@ function Home({ cart, setCart, updateCartCount }) {
           <br />
       </div>
       <div>
-      <div className="available-product-container">
-        <div style={{ marginTop: "7em", textAlign: "center" }}>
-          <div className="category-container" style={{backgroundColor: 'white', padding: '3em 3em'}}>
-            <strong>Select Category:</strong>
+        <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
+      <span style={{textAlign: "center"}}>Select Category:</span>
+
+          <div className="category-container" >
         <div className="filter-button"  code="categoryFilter"
               value={selectedCategory}
               onClick={(e) => setSelectedCategory(e.target.value)}>
@@ -166,6 +166,9 @@ function Home({ cart, setCart, updateCartCount }) {
               <button value='vegetables'>Vegetable</button>
           </div> 
           </div>
+          </div>
+          <div className="available-product-container">
+        <div style={{ marginTop: "7em", textAlign: "center" }}>
           {/* 
           <div className="sort-container" style={{ marginTop: "2em" }}>
             <label
