@@ -159,9 +159,9 @@ function Home({ cart, setCart, updateCartCount }) {
         <div className="filter-button"  code="categoryFilter"
               value={selectedCategory}
               onClick={(e) => setSelectedCategory(e.target.value)}>
-              <button value= 'all'>All</button>
-              <button value= 'fruits'>Fruit</button>
-              <button value='vegetables'>Vegetable</button>
+              <button value= 'all'><i class="fa fa-globe" aria-hidden="true"></i></button>
+              <button value= 'fruits'><i class="fa fa-globe" aria-hidden="true"></i></button>
+              <button value='vegetables'><i class="fa fa-globe" aria-hidden="true"></i></button>
           </div> 
           </div>
           </div>
