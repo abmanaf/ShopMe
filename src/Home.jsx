@@ -167,7 +167,7 @@ function Home({ cart, setCart, updateCartCount }) {
           </div>
           <div className="available-product-container">
         <div style={{ marginTop: "3em", textAlign: "center" }}>
-           
+           {/* 
           <div className="sort-container" style={{ marginTop: "2em" }}>
             <label
               htmlFor="categoryFilter"
@@ -191,6 +191,7 @@ function Home({ cart, setCart, updateCartCount }) {
               <option value="vegetables">Vegetables</option>
             </select>
           </div>
+          */}
           
           <div className="product-in-container">{productList}</div>
         </div>

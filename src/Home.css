@@ -81,7 +81,9 @@
 }
 
 .filter-button {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-button button {
@@ -124,11 +126,6 @@
   .sort-container {
     display: none;
   }
-  .filter-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -158,11 +155,6 @@
   .sort-container {
     display: none;
   }
-  .filter-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -191,10 +183,5 @@
   }
   .sort-container {
     display: none;
-  }
-  .filter-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
