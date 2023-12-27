@@ -140,11 +140,6 @@ function Home({ cart, setCart, updateCartCount }) {
         </div>
       </div >
       <div className="featured-category" style={{ padding: "3em 1em" }}>
-        {/* 
-        <p style={{ fontSize: "25px" }}>
-          <strong>Featured Categories:</strong>
-        </p>
-        */}
         <div style={{ textAlign: "start" }}>
             <p style={{ textAlign: "start", fontSize: "25px" }}> <strong>Healthy Fruits:</strong>
             </p>
@@ -154,7 +149,9 @@ function Home({ cart, setCart, updateCartCount }) {
           <br />
       </div>
       <div>
+
         <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
+          <p style={{textAlign: 'center', fontSize: '2em',padding: '1em'}}>Category</p>
           <div className="category-container" >
         <div className="filter-button"  code="categoryFilter"
               value={selectedCategory}
