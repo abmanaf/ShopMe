@@ -87,13 +87,21 @@
 }
 
 .filter-button button {
-  padding: 20px 20px;
+  padding: 10px 10px;
   margin-right: 10px;
   cursor: pointer;
+  background-color: transparent; /* Set the default background color */
+  border: none; /* Remove the default button border */
+  outline: none; /* Remove the default button outline */
 }
 
 .filter-button button:last-child {
   margin-right: 0;
+}
+
+.filter-button button.active {
+  background-color: #c6b562; /* Set the background color for the active button */
+  color: white; /* Set the text color for the active button */
 }
 
 @media only screen and (min-width: 768px) {

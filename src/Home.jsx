@@ -153,13 +153,33 @@ function Home({ cart, setCart, updateCartCount }) {
         <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
           <p style={{textAlign: 'center', fontSize: '2em',padding: '1em'}}>Category</p>
           <div className="category-container" >
-        <div className="filter-button"  code="categoryFilter"
-              value={selectedCategory}
-              onClick={(e) => setSelectedCategory(e.target.value)}>
-              <button style={{borderRadius: '10px'}} value= 'all'><i style={{fontSize: '30px ', padding: '10px 20px', color: 'white'}} class="fa fa-globe" aria-hidden="true"></i> <br />All</button>
-              <button style={{borderRadius: '10px'}} value= 'fruits'><i style={{fontSize: '30px ', padding: '10px 20px',color: 'white'}} class="fa fa-globe" aria-hidden="true"></i> <br />Fruits</button>
-              <button style={{borderRadius: '10px'}} value='vegetables'><i style={{fontSize: '30px ', padding: '10px 20px',color: 'white'}} class="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables</button>
-          </div> 
+          <div className="filter-button" code="categoryFilter">
+  <button
+    style={{ borderRadius: '10px' }}
+    value="all"
+    className={selectedCategory === 'all' ? 'active' : ''}
+    onClick={(e) => setSelectedCategory(e.target.value)}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
+  </button>
+  <button
+    style={{ borderRadius: '10px' }}
+    value="fruits"
+    className={selectedCategory === 'fruits' ? 'active' : ''}
+    onClick={(e) => setSelectedCategory(e.target.value)}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />Fruits
+  </button>
+  <button
+    style={{ borderRadius: '10px' }}
+    value="vegetables"
+    className={selectedCategory === 'vegetables' ? 'active' : ''}
+    onClick={(e) => setSelectedCategory(e.target.value)}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
+  </button>
+</div>
+
           </div>
           </div>
           <div className="available-product-container">
