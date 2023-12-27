@@ -105,7 +105,7 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
     style={{ borderRadius: '10px' }}
     value="all"
     className={selectedCategory === 'all' ? 'active' : ''}
-    onClick={(e) => setSelectedCategory(e.target.value)}
+    onClick={() => setSelectedCategory('all')}
   >
     <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
   </button>
@@ -113,7 +113,7 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
     style={{ borderRadius: '10px' }}
     value="fruits"
     className={selectedCategory === 'fruits' ? 'active' : ''}
-    onClick={(e) => setSelectedCategory(e.target.value)}
+    onClick={() => setSelectedCategory('fruits')}
   >
     <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />Fruits
   </button>
@@ -121,7 +121,7 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
     style={{ borderRadius: '10px' }}
     value="vegetables"
     className={selectedCategory === 'vegetables' ? 'active' : ''}
-    onClick={(e) => setSelectedCategory(e.target.value)}
+    onClick={() => setSelectedCategory('vegetables')}
   >
     <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
   </button>
