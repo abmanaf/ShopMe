@@ -97,19 +97,38 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
  */}
   return (
     <div>
-      <div style={{backgroundColor: 'white', padding: '3em 3em', marginTop: '2em'}}>
-        
-        <p style={{textAlign: 'center',padding: '1em 1em', fontSize: '25px'}}>Category</p>
+        <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
+          <p style={{textAlign: 'center', fontSize: '2em',padding: '1em'}}>Category</p>
           <div className="category-container" >
-        <div className="filter-button"  code="categoryFilter"
-              value={selectedCategory}
-              onClick={(e) => setSelectedCategory(e.target.value)}>
-              <button value= 'all'>All</button>
-              <button value= 'fruits'>Fruit</button>
-              <button value='vegetables'>Vegetable</button>
-          </div> 
+          <div className="filter-button" code="categoryFilter">
+  <button
+    style={{ borderRadius: '10px' }}
+    value="all"
+    className={selectedCategory === 'all' ? 'active' : ''}
+    onClick={() => setSelectedCategory('all')}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
+  </button>
+  <button
+    style={{ borderRadius: '10px' }}
+    value="fruits"
+    className={selectedCategory === 'fruits' ? 'active' : ''}
+    onClick={() => setSelectedCategory('fruits')}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />Fruits
+  </button>
+  <button
+    style={{ borderRadius: '10px' }}
+    value="vegetables"
+    className={selectedCategory === 'vegetables' ? 'active' : ''}
+    onClick={() => setSelectedCategory('vegetables')}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
+  </button>
+</div>
+
           </div>
-         </div>
+          </div>
       <div className="available-product-container">
         <div style={{ marginTop: "4em", textAlign: "center" }}>
         {/* 

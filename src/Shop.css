@@ -6,7 +6,7 @@ body {
   border: none;
 }
 .filter-button button:hover {
-  background-color: rgb(175, 134, 47);
+  background-color: #c6b562;
 }
 .fruit-container {
   width: 80%;

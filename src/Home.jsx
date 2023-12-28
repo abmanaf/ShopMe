@@ -4,12 +4,32 @@ import Imageurl from "./Photo";
 import { initialProducts } from "./Database";
 import "./Shop.css";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef  } from "react";
 
 function Home({ cart, setCart, updateCartCount }) {
   const [products, setProducts] = useState(initialProducts);
   const [selectedCategory, setSelectedCategory] = useState("all");
   const navigate = useNavigate();
+
+  const fruitContainerRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (fruitContainerRef.current) {
+      fruitContainerRef.current.scrollBy({
+        left: -200, // Adjust the scroll distance as needed
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (fruitContainerRef.current) {
+      fruitContainerRef.current.scrollBy({
+        left: 200, // Adjust the scroll distance as needed
+        behavior: "smooth",
+      });
+    }
+  };
 
   const filteredProducts = initialProducts.filter((product) => {
     if (selectedCategory === "all") {
@@ -140,29 +160,55 @@ function Home({ cart, setCart, updateCartCount }) {
         </div>
       </div >
       <div className="featured-category" style={{ padding: "3em 1em" }}>
-        {/* 
-        <p style={{ fontSize: "25px" }}>
-          <strong>Featured Categories:</strong>
-        </p>
-        */}
         <div style={{ textAlign: "start" }}>
-            <p style={{ textAlign: "start", fontSize: "25px" }}> <strong>Healthy Fruits:</strong>
-            </p>
-            <span className="fruit-in-container">{healthyFruits}</span>
-          </div>
+          <div style={{display: 'flex'}}>
+            <div style={{ textAlign: "start", fontSize: "25px" }}> <strong>Healthy Fruits:</strong>
+           
+            </div>
+            <div className="scroll-button" >
+          <button className="scroll-left-right" onClick={scrollLeft}>&lt; </button> 
+          <button className="scroll-left-right" onClick={scrollRight}> &gt;</button>
+        </div>
+            </div>
+            
+            <div className="fruit-in-container" ref={fruitContainerRef}>
+          {healthyFruits}
+        </div>  
+       
+      </div>
           <hr />
           <br />
       </div>
       <div>
+
         <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
+          <p style={{textAlign: 'center', fontSize: '2em',padding: '1em'}}>Category</p>
           <div className="category-container" >
-        <div className="filter-button"  code="categoryFilter"
-              value={selectedCategory}
-              onClick={(e) => setSelectedCategory(e.target.value)}>
-              <button value= 'all'>All</button>
-              <button value= 'fruits'>Fruit</button>
-              <button value='vegetables'>Vegetable</button>
-          </div> 
+          <div className="filter-button" code="categoryFilter">
+  <button
+    style={{ borderRadius: '10px' }}
+    className={selectedCategory === 'all' ? 'active' : ''}
+    onClick={() => setSelectedCategory('all')}
+  >
+    <i style={{ fontSize: '30px ',  padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
+  </button>
+  <button
+    style={{ borderRadius: '10px' }}
+    className={selectedCategory === 'fruits' ? 'active' : ''}
+    onClick={() => setSelectedCategory('fruits')}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />Fruits
+  </button>
+  <button
+    style={{ borderRadius: '10px' }}
+    className={selectedCategory === 'vegetables' ? 'active' : ''}
+    onClick={() => setSelectedCategory('vegetables')}
+  >
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
+  </button>
+</div>
+
+
           </div>
           </div>
           <div className="available-product-container">
