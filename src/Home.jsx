@@ -176,8 +176,7 @@ function Home({ cart, setCart, updateCartCount }) {
         </div>  
        
       </div>
-          <hr />
-          <br />
+        
       </div>
       <div>
 

@@ -25,6 +25,9 @@
 .fruit-in-container {
   overflow-x: scroll;
 }
+.fruit-in-container::-webkit-scrollbar {
+  display: none;
+}
 
 .fruit-container .sub-fruit-container {
   width: 130px;

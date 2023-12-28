@@ -1,9 +1,13 @@
 import React from "react";
+import './About.css'
 
 function About() {
   return (
-    <div>
-      <p style={{ textAlign: "center" }}>About Us Page Coming soon</p>
+    <div className="about-container">
+      <div className="waiting-emoji">
+        <img src="" alt="" />
+      </div>
+      <p className="about-text" style={{ textAlign: "center" }}>About Coming Soon</p>
     </div>
   );
 }
