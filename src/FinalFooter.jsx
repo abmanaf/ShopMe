@@ -1,5 +1,6 @@
 import React from "react";
 import "./FinalFooter.css";
+import { Link } from "react-router-dom";
 
 function FinalFooter() {
   return (
@@ -10,24 +11,24 @@ function FinalFooter() {
         </p>
 
         <div className="footer-social">
-          <a href="#">
+          <Link to="https://web.facebook.com/?_rdc=1&_rdr">
             <i
               style={{ color: "white", padding: "15px 15px" }}
               className="fa fa-facebook"
             ></i>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="https://twitter.com/home">
             <i
               style={{ color: "white", padding: "15px 15px" }}
               className="fa fa-twitter"
             ></i>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="#">
             <i
               style={{ color: "white", padding: "15px 15px" }}
               className="fa fa-instagram"
             ></i>
-          </a>
+          </Link>
         </div>
       </footer>
     </div>

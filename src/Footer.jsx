@@ -6,6 +6,7 @@ const Footer = () => {
     <footer style={footerStyle}>
       <div style={containerStyle}>
         <div style={infoStyle}>
+          dsfsdfldskfj;l
           <h3>Reach Me</h3>
           <p>Email: abdulmanafaliu414@email.com</p>
           {/* Address: Nii Sowah Street, Adenta, Ghana */}
