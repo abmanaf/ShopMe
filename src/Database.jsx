@@ -61,6 +61,8 @@ export const initialProducts = [
       count: 0,
       availableProduct: 35,
       imageId: "LuIDHn1b",
+      category: "fruits",
+
     },
    
     {
