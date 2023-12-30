@@ -130,7 +130,8 @@
   background-color: #d28e0f;
 }
 .scroll-left-right {
-  padding: 1px 7px;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 712px) {
