@@ -1,4 +1,5 @@
 import React from "react";
+import "./whatsAppIcon.css";
 
 export const WhatsAppIcon = () => {
   const whatsappNumber = "+233550800034";
