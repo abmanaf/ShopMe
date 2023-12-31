@@ -95,24 +95,6 @@
   margin-top: 4em;
 }
 
-/*
-  @media only screen and (min-width: 678px) {
-    #shopping-cart-list {
-      display: flex;
-      margin-top: 6em;
-    }
-    .sub-shopping-cart-page table {
-      width: 100%;
-      margin-left: 2em;
-    }
-    .check-point-proceed {
-      width: 30%;
-      height: 300px;
-      margin-left: 4em;
-      padding: 10px 10px;
-    }
-  }
-  */
 @media only screen and (min-width: 1024px) {
   #shopping-cart-list {
     display: flex;

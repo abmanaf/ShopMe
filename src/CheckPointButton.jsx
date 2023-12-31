@@ -1,12 +1,12 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "./CheckPointButton.css"; // Import the CSS file
+import { useNavigate } from "react-router-dom"; 
+import "./CheckPointButton.css"; 
 
 const CheckPointButton = () => {
   const location = useLocation();
   const { productIds, cart } = location.state || {};
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   const calculateTotalAmount = () => {
     if (!cart) return 0;
