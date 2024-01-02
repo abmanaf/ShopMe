@@ -68,7 +68,7 @@ export default function Navbar({ cartCount }) {
         </CustomLink>
         <CustomLink to="/Shop">Shop</CustomLink>
         <CustomLink to="/About">About</CustomLink>
-        <CustomLink to="/Sales">Contact</CustomLink>
+        <CustomLink to="/Contact">Contact</CustomLink>
       </div>
 
       <div className="navbar-right">

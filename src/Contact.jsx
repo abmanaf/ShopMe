@@ -1,18 +1,18 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-const Sales = () => {
+const Contact = () => {
   const location = useLocation();
   const { CheckPointItem } = location.state || {};
 
   return (
     <div>
-      <p style={headerStyle}>Sales Page Comming soon</p>
+      <p style={headerStyle}>Contact Page Comming soon</p>
     </div>
   );
 };
 
-export default Sales;
+export default Contact;
 
 const headerStyle = {
   textAlign: "center",
