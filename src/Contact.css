@@ -95,4 +95,7 @@ textarea {
     width: 100%;
     padding: 2em;
   }
+  .contact-image {
+    margin-top: 6em;
+  }
 }
