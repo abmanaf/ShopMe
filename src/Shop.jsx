@@ -63,7 +63,12 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
           </del>{" "}
           &cent;{product.price}
           <br />
+          {/* 
+          {product.availableProduct ? product.availableProduct: 'product is out of stock'}
           <br />
+          */}
+          <br />
+          
           <div className="addToCart">
             <button onClick={() => addToCart(product.id)}>Add To Cart</button>
           </div>
