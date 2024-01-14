@@ -21,6 +21,17 @@
   margin-top: 5em;
   border: none;
 }
+
+.fruit-in-container {
+  overflow-x: scroll;
+}
+.fruit-in-container::-webkit-scrollbar {
+  display: none;
+}
+
+.fruit-container .sub-fruit-container {
+  width: 130px;
+}
 .in-touch {
   font-size: 30px;
   margin-top: 4em;
@@ -87,16 +98,43 @@
 }
 
 .filter-button button {
-  padding: 20px 20px;
+  padding: 10px 10px;
   margin-right: 10px;
   cursor: pointer;
+  background-color: transparent; /* Set the default background color */
+  border: none; /* Remove the default button border */
+  outline: none; /* Remove the default button outline */
 }
 
 .filter-button button:last-child {
   margin-right: 0;
 }
 
-@media only screen and (min-width: 768px) {
+.filter-button button.active {
+  background-color: #c6b562; /* Set the background color for the active button */
+  color: white; /* Set the text color for the active button */
+}
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-left: 9em;
+  gap: 5px;
+}
+.scroll-button button {
+  border: none;
+  background-color: #e0bb53;
+  cursor: pointer;
+}
+.scroll-button button:hover {
+  background-color: #d28e0f;
+}
+.scroll-left-right {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 712px) {
   .title {
     display: block;
   }
@@ -125,6 +163,9 @@
   }
   .sort-container {
     display: none;
+  }
+  .scroll-button {
+    margin-left: 32em;
   }
 }
 
@@ -155,6 +196,12 @@
   .sort-container {
     display: none;
   }
+  .fruit-container .sub-fruit-container {
+    width: 150px;
+  }
+  .scroll-button {
+    margin-left: 46em;
+  }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -183,5 +230,18 @@
   }
   .sort-container {
     display: none;
+  }
+  .fruit-in-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px; /* Adjust the gap as needed */
+  }
+
+  .fruit-container .sub-fruit-container {
+    min-width: 180px; /* Adjust the minimum width as needed */
+    white-space: normal;
+  }
+  .scroll-button {
+    margin-left: 78em;
   }
 }

@@ -6,7 +6,7 @@ import "./CheckPointButton.css";
 const CheckPointButton = () => {
   const location = useLocation();
   const { productIds, cart } = location.state || {};
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
   const calculateTotalAmount = () => {
     if (!cart) return 0;

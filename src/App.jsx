@@ -4,7 +4,7 @@ import { SiteDescription } from "./SiteDescription";
 import Home from "./Home";
 import Shop from "./Shop";
 import About from "./About";
-import Sales from "./Contact";
+import Contact from "./Contact";
 import CartContent from "./CartContent";
 
 import { Route, Routes } from "react-router-dom";
@@ -46,7 +46,7 @@ export default function App() {
           }
         />
         <Route path="/About" element={<About />} />
-        <Route path="/Sales" element={<Sales />} />
+        <Route path="/Contact" element={<Contact />} />
         <Route
           path="/CartContent"
           element={
