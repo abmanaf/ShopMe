@@ -34,7 +34,6 @@ const Contact = () => {
   };
 
   // const location = useLocation();
-  // const { CheckPointItem } = location.state || {};
 
   return (
     <div className="Contact-container">
