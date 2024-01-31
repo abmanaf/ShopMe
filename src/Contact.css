@@ -99,18 +99,3 @@ textarea {
     margin-top: 6em;
   }
 }
-/*@media only screen and (min-width: 1024px) {
-  .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    background-color: #ffffff;
-    gap: 10em;
-    margin-top: 4em;
-  }
-
-  .about-content {
-    max-width: 500px;
-  }
-} */
