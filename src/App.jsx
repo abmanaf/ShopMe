@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import Navbar from "./NavBar";
 import { SiteDescription } from "./SiteDescription";
 import Home from "./Home";
@@ -7,7 +7,7 @@ import About from "./About";
 import Contact from "./Contact";
 import CartContent from "./CartContent";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate  } from "react-router-dom";
 import FinalFooter from "./FinalFooter";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import CheckPointButton from "./CheckPointButton";
@@ -20,6 +20,13 @@ export default function App() {
   const [cartCount, setCartCount] = useState(0);
   const [cart, setCart] = useState([]);
   const [enteredDetails, setEnteredDetails] = useState([]);
+  const navigate = useNavigate(); // Get the navigate function
+
+  useEffect(() => {
+    // Redirect to Home when the component mounts
+    navigate('/Home', { replace: true });
+  }, [navigate]);
+
 
   const updateCartCount = (count) => {
     setCartCount(count);
