@@ -20,12 +20,7 @@ export default function App() {
   const [cartCount, setCartCount] = useState(0);
   const [cart, setCart] = useState([]);
   const [enteredDetails, setEnteredDetails] = useState([]);
-  const navigate = useNavigate(); // Get the navigate function
-
-  useEffect(() => {
-    // Redirect to Home when the component mounts
-    navigate('/Home', { replace: true });
-  }, [navigate]);
+  //const navigate = useNavigate(); // Get the navigate function
 
 
   const updateCartCount = (count) => {
@@ -41,7 +36,7 @@ export default function App() {
       <Navbar cartCount={cartCount} cart={cart} />
       <Routes>
         <Route path="/Home" element={<Home cart={cart} setCart={setCart} updateCartCount={updateCartCount} />
-} />
+}  />
         <Route
           path="/Shop"
           element={
