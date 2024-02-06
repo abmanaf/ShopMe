@@ -50,7 +50,7 @@ export default function App() {
         <Route path="/E-commerce-react/About" element={<About />} />
         <Route path="/E-commerce-react/Contact" element={<Contact />} />
         <Route
-          path="/CartContent"
+          path="/E-commerce-react/CartContent"
           element={
             <CartContent
               cart={cart}
@@ -59,7 +59,7 @@ export default function App() {
             />
           }
         />
-        <Route path="/CheckPointButton" element={<CheckPointButton />} />
+        <Route path="/E-commerce-react/CheckPointButton" element={<CheckPointButton />} />
         <Route
           path="/E-commerce-react/SignupPage"
           element={<SignupPage updateEnteredDetails={setEnteredDetails} />}
@@ -69,11 +69,11 @@ export default function App() {
           element={<LoginPage enteredDetails={enteredDetails} />}
         />
         <Route
-          path="/Data"
+          path="/E-commerce-react/Data"
           element={<Data enteredDetails={enteredDetails} />}
         />
         <Route
-          path="/ForgotPassword"
+          path="/E-commerce-react/ForgotPassword"
           element={<ForgotPassword enteredDetails={enteredDetails} />}
         />
       </Routes>
