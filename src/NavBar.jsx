@@ -3,6 +3,7 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "font-awesome/css/font-awesome.min.css";
 import UserProfile from "./UserProfile";
 import CartIcon from "./CartIcon";
+import "./index.css";
 
 export default function Navbar({ cartCount }) {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false);
@@ -23,57 +24,57 @@ export default function Navbar({ cartCount }) {
         </div>
         <CustomLink
           className="side-bar-context"
-          to="/Home"
+          to="/E-commerce-react"
           closeSideBar={closeSideBar}
         >
           Home
         </CustomLink>
         <CustomLink
           className="side-bar-context"
-          to="/Shop"
+          to="/E-commerce-react/Shop"
           closeSideBar={closeSideBar}
         >
           Shop
         </CustomLink>
         <CustomLink
           className="side-bar-context"
-          to="/About"
+          to="/E-commerce-react/About"
           closeSideBar={closeSideBar}
         >
           About
         </CustomLink>
         <CustomLink
           className="side-bar-context"
-          to="/Contact"
+          to="/E-commerce-react/Contact"
           closeSideBar={closeSideBar}
         >
           Contact
         </CustomLink>
         <CustomLink
           className="side-bar-context"
-          to="/LoginPage"
+          to="/E-commerce-react/LoginPage"
           closeSideBar={closeSideBar}
         >
           Login
         </CustomLink>
       </div>
       <div className="navbar-left">
-        <Link to="#" className="site-name">
+        <li className="site-name">
           AlibabsShop
-        </Link>
+        </li>
       </div>
       <div className="navbar-middle">
-        <CustomLink className="" to="/Home" closeSideBar={closeSideBar}>
+        <CustomLink className="" to="/E-commerce-react" closeSideBar={closeSideBar}>
           Home
         </CustomLink>
-        <CustomLink to="/Shop">Shop</CustomLink>
-        <CustomLink to="/About">About</CustomLink>
-        <CustomLink to="/Contact">Contact</CustomLink>
+        <CustomLink to="/E-commerce-react/Shop" >Shop</CustomLink>
+        <CustomLink to="/E-commerce-react/About">About</CustomLink>
+        <CustomLink to="/E-commerce-react/Contact">Contact</CustomLink>
       </div>
 
       <div className="navbar-right">
         <div className="login-icon">
-          <UserProfile to="/LoginPage" />
+          <UserProfile to="/E-commerce-react/LoginPage" />
         </div>
         <div className="icon-float">
           <div>
