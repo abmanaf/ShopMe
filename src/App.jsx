@@ -35,10 +35,10 @@ export default function App() {
     <div>
       <Navbar cartCount={cartCount} cart={cart} />
       <Routes>
-        <Route path="/Home" element={<Home cart={cart} setCart={setCart} updateCartCount={updateCartCount} />
+        <Route path="/E-commerce-react" element={<Home cart={cart} setCart={setCart} updateCartCount={updateCartCount} />
 }  />
         <Route
-          path="/Shop"
+          path="/E-commerce-react/Shop"
           element={
             <Shop
               updateCartCount={updateCartCount}
@@ -47,8 +47,8 @@ export default function App() {
             />
           }
         />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/E-commerce-react/About" element={<About />} />
+        <Route path="/E-commerce-react/Contact" element={<Contact />} />
         <Route
           path="/CartContent"
           element={
@@ -61,11 +61,11 @@ export default function App() {
         />
         <Route path="/CheckPointButton" element={<CheckPointButton />} />
         <Route
-          path="/SignupPage"
+          path="/E-commerce-react/SignupPage"
           element={<SignupPage updateEnteredDetails={setEnteredDetails} />}
         />
         <Route
-          path="/LoginPage"
+          path="/E-commerce-react/LoginPage"
           element={<LoginPage enteredDetails={enteredDetails} />}
         />
         <Route
