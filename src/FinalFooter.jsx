@@ -6,8 +6,8 @@ function FinalFooter() {
   return (
     <div>
       <footer className="footer">
-        <p style={{ fontSize: "12px", color: "white", marginTop: "10px" }}>
-          &copy; 2023 AlibabsShop. All rights reserved.
+        <p style={{ fontSize: "12px", color: "white", textAlign: 'center', justifyContent: 'center' }}>
+          &copy; 2024 AlibabsShop. All rights reserved.
         </p>
 
         <div className="footer-social">
