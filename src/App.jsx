@@ -30,6 +30,8 @@ export default function App() {
   const updateCart = (updatedCart) => {
     setCart(updatedCart);
   };
+    console.log("updateCartCount in App:", updateCartCount); // Debugging
+
 
   return (
     <div>
@@ -59,7 +61,7 @@ export default function App() {
             />
           }
         />
-        <Route path="/E-commerce-react/CheckPointButton" element={<CheckPointButton />} />
+        <Route path="/E-commerce-react/CheckPointButton" element={<CheckPointButton cart={cart} setCart={setCart} updateCartCount={updateCartCount}/>} />
         <Route
           path="/E-commerce-react/SignupPage"
           element={<SignupPage updateEnteredDetails={setEnteredDetails} />}
