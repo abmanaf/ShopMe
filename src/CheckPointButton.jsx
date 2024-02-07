@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom"; 
-import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogActions from "@mui/material/DialogActions";
-import Button from "@mui/material/Button";
+
 import "./CheckPointButton.css"; 
 
 const CheckPointButton = ({ updateCartCount, setCart }) => {
+  const [fullName, setFirstName] = useState('');
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
+  const [telephone, setTelephone] = useState('');
+  const [contomerDetails, setCustomerDetails] = useState([]);
   const location = useLocation();
   const { productIds, cart } = location.state || {};
   const navigate = useNavigate(); 
@@ -30,35 +30,53 @@ const CheckPointButton = ({ updateCartCount, setCart }) => {
     // Get the product IDs from the cart
     //const productIds = cart.map((product) => product.id);
     // navigate("/Sales", { state: { productIds, cart } });
-
-
+    if(fullName && email && address && telephone){
+      alert("message sent");
+    }
+    else{
+      alert('Please fill in all the required fields.');
+      return; // Stop execution if any field is empty
+    }
     updateCartCount(0);
     setCart([]); // Reset cart to an empty array
     setOrderPlaced(true); // Set order placed status to true
+    productIds([])
   };
 
-
-
   return (
-    <div>
+    <div className="checkout-container">
       {orderPlaced ? (
-        <div>
-          <h2 style={{ textAlign: "center", marginTop: "4em" }}>Order Placed Successfully</h2>
-          <p style={{ textAlign: "center" }}>Thank you for your order!</p>
+        <div className="order-placed">
+          <h2>Order Placed Successfully</h2>
+          <p>Thank you for your order!</p>
         </div>
       ) : (
-        <>
-          <h2 style={{ textAlign: "center", marginTop: "4em" }}>
-            Selected Products
-          </h2>
-          {productIds ? (
-            <div>
-              <table className="check-point-table" style={{ margin: "0 auto" }}>
+        <div className="checkout-content">
+            <div className="checkout-form">
+            <form>
+              <div className="form-group">
+                <label htmlFor="fullName">Full Name *</label>
+                <input type="text" id="fullName" value={fullName} onChange={(e) => setFirstName(e.target.value)} required />              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email Address *</label>
+                <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required />              </div>
+              <div className="form-group">
+                <label htmlFor="address">Address *</label>
+                <input type="text" id="address" value={address} onChange={(e) => setAddress(e.target.value)} required />              </div>
+              <div className="form-group">
+                <label htmlFor="phone">Phone Number *</label>
+                <input type="text" id="phone" value={telephone} onChange={(e) => setTelephone(e.target.value)} required />              </div>
+              
+            </form>
+          </div>
+          <div className="checkout-products">
+            {productIds && (
+              <table className="check-point-table">
                 <thead>
                   <tr>
-                    <th>Product Name</th>
+                    <th>Product</th>
                     <th>Quantity</th>
-                    <th>Total Amount (GH)</th>
+                    <th>Sub Total(GH)</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -81,25 +99,17 @@ const CheckPointButton = ({ updateCartCount, setCart }) => {
                 </tbody>
                 <tfoot>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Amount to be paid: {calculateTotalAmount().toFixed(2)}</td>
+                    <td colSpan="3">Amount to be paid: {calculateTotalAmount().toFixed(2)}</td>
                   </tr>
                 </tfoot>
               </table>
-              <div style={{ width: "50%", padding: "3rem" }}>
-                <button
-                  onClick={handleSubmitOrder}
-                  style={{ cursor: "pointer", float: "right", padding: "0.5em" }}
-                >
-                  Place Order
-                </button>
-              </div>
-            </div>
-          ) : (
-            <p>No products selected.</p>
-          )}
-        </>
+              
+            )}
+            <button onClick={handleSubmitOrder} className="place-order-btn">
+                Place Order
+              </button>
+          </div>
+        </div>
       )}
     </div>
   );
