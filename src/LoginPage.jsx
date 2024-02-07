@@ -61,7 +61,7 @@ export default function LoginPage({ enteredDetails }) {
             required
           />
           <Link
-            to="/ForgotPassword"
+            to="/E-commerce-react/ForgotPassword"
             style={{
               fontSize: "14px",
               color: "#007bff",
@@ -76,7 +76,7 @@ export default function LoginPage({ enteredDetails }) {
           </button>
           <p className="form-footer" style={{ textAlign: "center" }}>
             Don't have an account?{" "}
-            <Link to="/SignupPage" style={{ color: "#007bff" }}>
+            <Link to="/E-commerce-react/SignupPage" style={{ color: "#007bff" }}>
               Sign up
             </Link>
             .
