@@ -108,7 +108,7 @@ function SignupPage({ updateEnteredDetails }) {
           </button>
           <p className="form-footer" style={{ textAlign: "center" }}>
             Already have an account?{" "}
-            <Link to="/LoginPage" style={{ color: "#007bff" }}>
+            <Link to="/E-commerce-react/LoginPage" style={{ color: "#007bff" }}>
               Login
             </Link>
           </p>
