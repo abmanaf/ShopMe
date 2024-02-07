@@ -1,5 +1,12 @@
+.checkout-container {
+  margin-top: 5em;
+}
+.checkout-content {
+  justify-content: center;
+  margin-top: 10em;
+}
 .check-point-table {
-  width: 50%;
+  width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 16px;
@@ -22,4 +29,63 @@
 
 .check-point-table tbody tr:hover {
   background-color: #ddd;
+}
+.checkout-products {
+  margin-top: 5em;
+}
+.order-placed {
+  text-align: center;
+  justify-content: center;
+  color: green;
+}
+.place-order-btn {
+  width: 100%;
+  background-color: rgb(60, 60, 241);
+  padding: 1em 1em;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  margin-top: 2em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .checkout-content {
+    display: flex;
+    margin-top: 10em;
+    gap: 4em;
+  }
+  .checkout-products {
+    width: 35%;
+  }
+  .checkout-form {
+    width: 40%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .checkout-content {
+    display: flex;
+    margin-top: 10em;
+    gap: 4em;
+  }
+  .checkout-products {
+    width: 35%;
+  }
+  .checkout-form {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .checkout-content {
+    display: flex;
+    margin-top: 10em;
+    gap: 4em;
+  }
+  .checkout-products {
+    width: 35%;
+  }
+  .checkout-form {
+    width: 40%;
+  }
 }
