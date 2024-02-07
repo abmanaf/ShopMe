@@ -68,7 +68,7 @@ const CartContent = ({ cart, updateCart, updateCartCount }) => {
 
   const handleCheckpointClick = () => {
     const productIds = cart.map((product) => product.id);
-    navigate("/CheckPointButton", { state: { productIds, cart } });
+    navigate("/E-commerce-react/CheckPointButton", { state: { productIds, cart } });
   };
 
   return (
