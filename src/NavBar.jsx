@@ -52,7 +52,7 @@ export default function Navbar({ cartCount }) {
         </CustomLink>
         <CustomLink
           className="side-bar-context"
-          to="/LoginPage"
+          to="/E-commerce-react/LoginPage"
           closeSideBar={closeSideBar}
         >
           Login
