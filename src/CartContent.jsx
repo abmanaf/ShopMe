@@ -175,6 +175,8 @@ const CartContent = ({ cart, updateCart, updateCartCount }) => {
                       border: "none",
                       backgroundColor: "rgb(89, 172, 89)",
                       cursor: "pointer",
+                      color: 'white',
+                      textTransform: 'uppercase'
                     }}
                     onClick={() => handleCheckpointClick()}
                   >
