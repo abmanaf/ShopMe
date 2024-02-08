@@ -49,7 +49,7 @@ function SignupPage({ updateEnteredDetails }) {
       setEmail("");
       setPassword("");
 
-      navigate("/Data");
+      navigate("/E-commerce-react/Data");
     } else {
       alert("Please check password rules before");
     }
