@@ -120,7 +120,7 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
     className={selectedCategory === 'fruits' ? 'active' : ''}
     onClick={() => setSelectedCategory('fruits')}
   >
-    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />Fruits
+    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-weibo" aria-hidden="true"></i> <br />Fruits
   </button>
   <button
     style={{ borderRadius: '10px' }}
