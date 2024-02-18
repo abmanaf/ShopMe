@@ -166,10 +166,10 @@ function Home({ cart, setCart, updateCartCount }) {
            
             </div>
             <div className="scroll-button" >
-          <button className="scroll-left-right" onClick={scrollLeft}>&lt; </button> 
-          <button className="scroll-left-right" onClick={scrollRight}> &gt;</button>
-        </div>
+              <button className="scroll-left-right" onClick={scrollLeft}>&lt; </button> 
+              <button className="scroll-left-right" onClick={scrollRight}> &gt;</button>
             </div>
+          </div>
             
             <div className="fruit-in-container" ref={fruitContainerRef}>
           {healthyFruits}
