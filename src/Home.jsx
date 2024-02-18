@@ -194,13 +194,13 @@ function Home({ cart, setCart, updateCartCount }) {
           >
             <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} class="fa fa-weibo" aria-hidden="true"></i> <br />Fruits
           </button>
-  <button
-    style={{ borderRadius: '10px' }}
-    className={selectedCategory === 'vegetables' ? 'active' : ''}
-    onClick={() => setSelectedCategory('vegetables')}
-  >
-    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
-  </button>
+          <button
+            style={{ borderRadius: '10px' }}
+            className={selectedCategory === 'vegetables' ? 'active' : ''}
+            onClick={() => setSelectedCategory('vegetables')}
+          >
+            <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
+          </button>
 </div>
 
 
