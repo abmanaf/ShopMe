@@ -170,12 +170,10 @@ function Home({ cart, setCart, updateCartCount }) {
               <button className="scroll-left-right" onClick={scrollRight}> &gt;</button>
             </div>
           </div>
-            
-            <div className="fruit-in-container" ref={fruitContainerRef}>
-          {healthyFruits}
-        </div>  
-       
-      </div>
+          <div className="fruit-in-container" ref={fruitContainerRef}>
+              {healthyFruits}
+          </div>  
+        </div>
         
       </div>
       <div>
