@@ -102,40 +102,39 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
  */}
   return (
     <div>
-        <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
+        <div style={{backgroundColor: 'white',padding: '3em 3em'}}>
           <p style={{textAlign: 'center', fontSize: '2em',padding: '1em'}}>Category</p>
           <div className="category-container" >
-          <div className="filter-button" code="categoryFilter">
-  <button
-    style={{ borderRadius: '10px' }}
-    value="all"
-    className={selectedCategory === 'all' ? 'active' : ''}
-    onClick={() => setSelectedCategory('all')}
-  >
-    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
-  </button>
-  <button
-    style={{ borderRadius: '10px' }}
-    value="fruits"
-    className={selectedCategory === 'fruits' ? 'active' : ''}
-    onClick={() => setSelectedCategory('fruits')}
-  >
-    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-weibo" aria-hidden="true"></i> <br />Fruits
-  </button>
-  <button
-    style={{ borderRadius: '10px' }}
-    value="vegetables"
-    className={selectedCategory === 'vegetables' ? 'active' : ''}
-    onClick={() => setSelectedCategory('vegetables')}
-  >
-    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
-  </button>
-</div>
-
+             <div className="filter-button" code="categoryFilter">
+              <button
+                  style={{ borderRadius: '10px' }}
+                  value="all"
+                  className={selectedCategory === 'all' ? 'active' : ''}
+                  onClick={() => setSelectedCategory('all')}
+                >
+                  <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
+              </button>
+              <button
+                style={{ borderRadius: '10px' }}
+                value="fruits"
+                className={selectedCategory === 'fruits' ? 'active' : ''}
+                onClick={() => setSelectedCategory('fruits')}
+              >
+                <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-weibo" aria-hidden="true"></i> <br />Fruits
+              </button>
+              <button
+                style={{ borderRadius: '10px' }}
+                value="vegetables"
+                className={selectedCategory === 'vegetables' ? 'active' : ''}
+                onClick={() => setSelectedCategory('vegetables')}
+              >
+                <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} className="fa fa-cutlery" aria-hidden="true"></i><br />Vegetables
+              </button>
+            </div>
+            </div>
           </div>
-          </div>
-      <div className="available-product-container">
-        <div style={{ marginTop: "4em", textAlign: "center" }}>
+       <div className="available-product-container">
+        <div style={{ marginTop: "4em", textAlign: "center", }}>
         {/* 
           <div className="sort-container" style={{ marginTop: "2em" }}>
             <label
@@ -160,7 +159,7 @@ const Shop = ({ cart, setCart, updateCartCount }) => {
             </select>
           </div>
           */}
-          <div className="product-in-container">{productList}</div>
+          <div className="product-in-container" style={{justifyContent: 'center', textAlignLast: 'center',}}>{productList}</div>
         </div>
       </div>
     </div>
