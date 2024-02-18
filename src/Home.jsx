@@ -174,28 +174,26 @@ function Home({ cart, setCart, updateCartCount }) {
               {healthyFruits}
           </div>  
         </div>
-        
       </div>
       <div>
-
         <div style={{backgroundColor: 'white', padding: '3em 3em'}}>
           <p style={{textAlign: 'center', fontSize: '2em',padding: '1em'}}>Category</p>
           <div className="category-container" >
           <div className="filter-button" code="categoryFilter">
-  <button
-    style={{ borderRadius: '10px' }}
-    className={selectedCategory === 'all' ? 'active' : ''}
-    onClick={() => setSelectedCategory('all')}
-  >
-    <i style={{ fontSize: '30px ',  padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
-  </button>
-  <button
-    style={{ borderRadius: '10px' }}
-    className={selectedCategory === 'fruits' ? 'active' : ''}
-    onClick={() => setSelectedCategory('fruits')}
-  >
-    <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} class="fa fa-weibo" aria-hidden="true"></i> <br />Fruits
-  </button>
+          <button
+            style={{ borderRadius: '10px' }}
+            className={selectedCategory === 'all' ? 'active' : ''}
+            onClick={() => setSelectedCategory('all')}
+          >
+            <i style={{ fontSize: '30px ',  padding: '10px 20px', color: 'white' }} className="fa fa-globe" aria-hidden="true"></i> <br />All
+          </button>
+          <button
+            style={{ borderRadius: '10px' }}
+            className={selectedCategory === 'fruits' ? 'active' : ''}
+            onClick={() => setSelectedCategory('fruits')}
+          >
+            <i style={{ fontSize: '30px ', padding: '10px 20px', color: 'white' }} class="fa fa-weibo" aria-hidden="true"></i> <br />Fruits
+          </button>
   <button
     style={{ borderRadius: '10px' }}
     className={selectedCategory === 'vegetables' ? 'active' : ''}
