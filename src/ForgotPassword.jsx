@@ -26,7 +26,7 @@ function ForgotPassword({ enteredDetails }) {
       });
       setResetPassword("");
       console.log("Updated user details:", updatedDetails);
-      alert("Password reset successful. Check your email for further instructions.");
+      alert(" Check your email and follow the instructions to reset your password Thank you.");
     } else {
       alert("User not found. Please check your email or username.");
     }
