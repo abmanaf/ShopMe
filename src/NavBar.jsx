@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "font-awesome/css/font-awesome.min.css";
 import UserProfile from "./UserProfile";
-import CartIcon from "./CartIcon";
+import CartIcon from "./Cart_icon/CartIcon";
 import "./index.css";
 
 export default function Navbar({ cartCount }) {
