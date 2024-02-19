@@ -1,19 +1,19 @@
 import React, { useState, useEffect  } from "react";
 import Navbar from "./NavBar";
 import { SiteDescription } from "./SiteDescription";
-import Home from "./Home";
-import Shop from "./Shop";
-import About from "./About";
-import Contact from "./Contact";
-import CartContent from "./CartContent";
+import Home from "./Home_page/Home";
+import Shop from "./Shopping_page/Shop";
+import About from "./About/About";
+import Contact from "./Contact/Contact";
+import CartContent from "./Cart_content/CartContent";
 
 import { Route, Routes, useNavigate  } from "react-router-dom";
-import FinalFooter from "./FinalFooter";
-import { WhatsAppIcon } from "./WhatsAppIcon";
-import CheckPointButton from "./CheckPointButton";
-import LoginPage from "./LoginPage";
-import SignupPage from "./SignupPage";
-import Data from "./Data";
+import FinalFooter from "../Footer/FinalFooter";
+import { WhatsAppIcon } from "../WhatsApp_icon/WhatsAppIcon";
+import CheckPointButton from "./Check_point/CheckPointButton";
+import LoginPage from "./Login_page/LoginPage";
+import SignupPage from "./Signup_page/SignupPage";
+import Data from "./Users_data/Data";
 import ForgotPassword from "./ForgotPassword";
 
 export default function App() {
