@@ -37,7 +37,7 @@ const CheckPointButton = ({ updateCartCount, setCart }) => {
       return; 
     }
     updateCartCount(0);
-    setCart([]); // Reset cart to an empty array
+    setCart([]); 
     setOrderPlaced(true); // Set order placed status to true
     productIds([])
   };
