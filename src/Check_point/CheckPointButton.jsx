@@ -27,7 +27,6 @@ const CheckPointButton = ({ updateCartCount, setCart }) => {
   };       
 
   const handleSubmitOrder = () => {
-    // Get the product IDs from the cart
     //const productIds = cart.map((product) => product.id);
     // navigate("/Sales", { state: { productIds, cart } });
     if(fullName && email && address && telephone){
