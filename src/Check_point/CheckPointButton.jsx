@@ -34,7 +34,7 @@ const CheckPointButton = ({ updateCartCount, setCart }) => {
     }
     else{
       alert('Please fill in all the required fields.');
-      return; // Stop execution if any field is empty
+      return; 
     }
     updateCartCount(0);
     setCart([]); // Reset cart to an empty array
