@@ -63,6 +63,7 @@ export default function Navbar({ cartCount }) {
           AlibabsShop
         </li>
       </div>
+      {/* */}
       <div className="navbar-middle">
         <CustomLink className="" to="/E-commerce-react" closeSideBar={closeSideBar}>
           Home
