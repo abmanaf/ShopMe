@@ -29,7 +29,6 @@ ul {
   padding: 0.25rem;
 }
 
-/* Style the site name on the left */
 .navbar-left {
   flex: 1;
   display: flex;
@@ -43,8 +42,7 @@ ul {
   width: 100%;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.2);
-  /*   background-color: rgba(216, 20, 20, 0.2);
-*/
+
   padding: 2em 2em;
 
   backdrop-filter: blur(10px);
