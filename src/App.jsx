@@ -29,7 +29,7 @@ export default function App() {
   const updateCart = (updatedCart) => {
     setCart(updatedCart);
   };
-    console.log("updateCartCount in App:", updateCartCount); // Debugging
+    console.log("updateCartCount in App:", updateCartCount); 
 
 
   return (
