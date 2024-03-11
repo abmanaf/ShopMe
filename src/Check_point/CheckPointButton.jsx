@@ -54,7 +54,7 @@ const CheckPointButton = ({ updateCartCount, setCart }) => {
             <div className="checkout-form">
             <form>
               <div className="form-group">
-                <label htmlFor="fullName">Full Name *</label>
+                <label htmlFor="fullName">Full Name <span style={{color: 'red'}}>*</span> </label>
                 <input type="text" id="fullName" value={fullName} onChange={(e) => setFirstName(e.target.value)} required />              </div>
               <div className="form-group">
                 <label htmlFor="email">Email Address *</label>
