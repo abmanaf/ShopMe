@@ -63,7 +63,7 @@ const CheckPointButton = ({ updateCartCount, setCart }) => {
                 <label htmlFor="address">Address <span style={{color: 'red'}}>*</span></label>
                 <input type="text" id="address" value={address} onChange={(e) => setAddress(e.target.value)} required />              </div>
               <div className="form-group">
-                <label htmlFor="phone">Phone Number *</label>
+                <label htmlFor="phone">Phone Number <span style={{color: 'red'}}>*</span></label>
                 <input type="text" id="phone" value={telephone} onChange={(e) => setTelephone(e.target.value)} required />              </div>
               
             </form>
